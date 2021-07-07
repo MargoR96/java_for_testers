@@ -4,19 +4,20 @@ public class HelloWorld {
     public static void main(String[] args) {
         hello("world");
         hello("user");
-        System.out.println("Площадь квадрата = " + area(5)) ;
-        System.out.println("Площадь прямоугольника = " + area(5,6));
+        Square s = new Square(5);
+        Rectangle r = new Rectangle(5,6);
+        System.out.println("Площадь квадрата = " + area(s)) ;
+        System.out.println("Площадь прямоугольника = " + area(r));
     }
 
     public static void hello(String somebody) {
         System.out.println("Hello," + somebody);
     }
 
-    public static double area (double l) {
-        double s = l*l;
-        return s;
+    public static double area (Square s) {
+        return s.l*s.l;
     }
-    public static double area (double a, double b) {
-        return a*b;
+    public static double area (Rectangle r) {
+        return r.a*r.b;
     }
 }
