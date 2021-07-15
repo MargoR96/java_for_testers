@@ -4,7 +4,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestNG {
-  public class TestPoint {
 
     @Test
     public void testArea() {
@@ -14,4 +13,4 @@ public class TestNG {
 
     }
   }
-}
+
